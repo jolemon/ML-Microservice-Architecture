@@ -1,0 +1,17 @@
+
+#  设置服务名
+spring:
+    application:
+        name: hello-service
+#  设置注册中心地址
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:3333/eureka
+        healthcheck:
+                  enabled: true
+    instance:
+        appname: euraka.client.01
+server:
+  port: 9090
+
